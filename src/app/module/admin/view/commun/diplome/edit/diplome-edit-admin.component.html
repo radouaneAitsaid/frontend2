@@ -1,0 +1,52 @@
+    <p-dialog [(visible)]="editDialog" [style]="{width: '70vw'}" header="{{'diplome.tabPan' | translate}}" [modal]="true" styleClass="p-fluid" [maximizable]="true" [draggable]="false" [resizable]="false">
+        <ng-template pTemplate="content" >
+                <p-tabView>
+                    <p-tabPanel header="{{'diplome.tabPan' | translate}}">
+                        <div class="grid">
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="1">{{'diplome.ref' | translate}}<span style="color: red;">*</span></label>
+                                            <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'diplome.ref' | translate}}" id="1" [(ngModel)]="item.ref"
+                                                   [ngClass]="{'ng-invalid ng-dirty' : !validDiplomeRef}"  />
+                                            <small class='p-error' *ngIf='!validDiplomeRef'>Ref est obligatoire.</small>
+                                        </div>
+
+
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="2">{{'diplome.libelle' | translate}}<span style="color: red;">*</span></label>
+                                            <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'diplome.libelle' | translate}}" id="2" [(ngModel)]="item.libelle"
+                                                   [ngClass]="{'ng-invalid ng-dirty' : !validDiplomeLibelle}"  />
+                                            <small class='p-error' *ngIf='!validDiplomeLibelle'>Libelle est obligatoire.</small>
+                                        </div>
+
+
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="3">{{'diplome.echelon' | translate}}</label>
+                                        <p-dropdown  appendTo="body"  [options]="echelons" [(ngModel)]="item.echelon" id="3" [filter]="true" filterMatchMode="contains"
+                                                     [showClear]="true" optionLabel="libelle" placeholder="{{'diplome.echelon' | translate}}"  >
+                                        </p-dropdown>
+                                        
+                                    </div>
+
+                        </div>
+                    </p-tabPanel>
+
+                </p-tabView>
+
+        </ng-template>
+
+        <ng-template pTemplate="footer" >
+            <div class="p-flexbox">
+
+                    <button pButton pRipple  label="{{'validate' | translate}}"  icon="pi pi-check"  (click)="edit()"></button>
+
+
+                        <button pButton pRipple  label="{{'cancel' | translate}}" icon="pi pi-times" class="p-button-outlined" (click)="hideEditDialog()"></button>
+
+
+            </div>
+        </ng-template>
+
+    </p-dialog>

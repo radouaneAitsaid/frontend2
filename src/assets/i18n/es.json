@@ -1,0 +1,325 @@
+{
+"from-to": "Elementos de {first} a {last} (total {totalRecords})",
+    "new": "Nuevo",
+    "search": "Buscar",
+    "export": "Exportar",
+    "import": "Importar",
+    "validate": "Validar",
+    "delete": "Eliminar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "next": "Siguiente",
+    "yes": "Sí",
+    "no": "No",
+    "actions": "Acciones",
+    "confirm": "Confirmar",
+    "creation": "Creación",
+    "list": "Lista",
+    "nom": "Nombre",
+    "Données personnelles" : "Datos personales",
+    "Username" : "Nombre de usuario",
+    "Télephone" : "Teléfono",
+    "Nouveau Mot de passe" : "Nueva contraseña",
+    "Confirmer votre Mot de passe" : "Confirmar contraseña",
+    "Mot de passe" : "Contraseña",
+    "prenom":"Nombre de Pila",
+    "Changer": "Cambiar",
+	
+	"actionPermission": {
+    "reference": "Referencia",
+    "libelle": "Etiqueta",
+    "actionPermission": "Permiso de acción",
+    "tabPan": "Permiso de acción",
+    "header": "Lista de permisos de acción",
+    "deleteActionPermissionConfirmationMessage": "¿Estás seguro de que quieres eliminar el permiso de acción",
+    "deleteActionPermissionsConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"modelPermissionUser": {
+    "actionPermission": "Permiso de acción",
+    "actionPermissionPlaceHolder": "Seleccionar un permiso de acción",
+    "actionPermissionPlaceHolderFilter": "Buscar por permiso de acción",
+    "modelPermission": "Permiso de modelo",
+    "modelPermissionPlaceHolder": "Seleccionar un permiso de modelo",
+    "modelPermissionPlaceHolderFilter": "Buscar por permiso de modelo",
+    "value": "Valor",
+    "user": "Usuario",
+    "userPlaceHolder": "Seleccionar un usuario",
+    "userPlaceHolderFilter": "Buscar por usuario",
+    "subAttribute": "Subatributo",
+    "modelPermissionUser": "Permiso de modelo de usuario",
+    "tabPan": "Permiso de modelo de usuario",
+    "header": "Lista de permisos de modelo de usuario",
+    "deleteModelPermissionUserConfirmationMessage": "¿Estás seguro de que quieres eliminar el permiso de modelo de usuario",
+    "deleteModelPermissionUsersConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"role": {
+    "authority": "Autoridad",
+    "role": "Rol",
+    "tabPan": "Rol",
+    "header": "Lista de roles",
+    "deleteRoleConfirmationMessage": "¿Estás seguro de que quieres eliminar el rol",
+    "deleteRolesConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"roleUser": {
+    "role": "Rol",
+    "rolePlaceHolder": "Seleccionar un rol",
+    "rolePlaceHolderFilter": "Buscar por rol",
+    "user": "Usuario",
+    "userPlaceHolder": "Seleccionar un usuario",
+    "userPlaceHolderFilter": "Buscar por usuario",
+    "roleUser": "Usuario de rol",
+    "tabPan": "Usuario de rol",
+    "header": "Lista de usuarios de rol",
+    "deleteRoleUserConfirmationMessage": "¿Estás seguro de que quieres eliminar el usuario de rol",
+    "deleteRoleUsersConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"user": {
+    "credentialsNonExpired": "Credenciales no expiradas",
+    "enabled": "Habilitado",
+    "email": "Correo electrónico",
+    "accountNonExpired": "Cuenta no expirada",
+    "accountNonLocked": "Cuenta no bloqueada",
+    "username": "Nombre de usuario",
+    "password": "Contraseña",
+    "passwordChanged": "Contraseña cambiada",
+    "modelPermissionUsers": "Usuarios de permiso de modelo",
+    "roleUsers": "Usuarios de rol",
+    "RoleUsersPlaceHolder": "Seleccionar múltiples roles",
+    "user": "Usuario",
+    "tabPan": "Usuario",
+    "header": "Lista de usuarios",
+    "deleteUserConfirmationMessage": "¿Estás seguro de que quieres eliminar el usuario",
+    "deleteUsersConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+"modelPermission": {
+    "reference": "Referencia",
+    "libelle": "Etiqueta",
+    "modelPermission": "Permiso de modelo",
+    "tabPan": "Permiso de modelo",
+    "header": "Lista de permisos de modelo",
+    "deleteModelPermissionConfirmationMessage": "¿Estás seguro de que quieres eliminar el permiso de modelo",
+    "deleteModelPermissionsConfirmationMessage": "¿Estás seguro de que quieres eliminar los elementos seleccionados?"
+},
+
+
+
+    "mandat":{
+        "ref": "Ref",
+        "dateDebut": "Date debut",
+        "dateDebutMin": "Date debut Min",
+        "dateDebutMax": "Date debut Max",
+        "dateFin": "Date fin",
+        "dateFinMin": "Date fin Min",
+        "dateFinMax": "Date fin Max",
+        "salaire": "Salaire",
+        "salaireMin": "Salaire Min",
+        "salaireMax": "Salaire Max",
+        "employe": "Employe",
+        "employePlaceHolder": "Select a Employe",
+        "employePlaceHolderFilter": "Search by Employe",
+        "responsabilite": "Responsabilite",
+        "responsabilitePlaceHolder": "Select a Responsabilite",
+        "responsabilitePlaceHolderFilter": "Search by Responsabilite",
+        "mandat": "Mandat",
+        "tabPan": "Mandat",
+        "header": "Liste des mandats",
+        "deleteMandatConfirmationMessage": "Are you sure you want to delete mandat",
+        "deleteMandatsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "diplome":{
+        "ref": "Ref",
+        "libelle": "Libelle",
+        "echelon": "Echelon",
+        "echelonPlaceHolder": "Select a Echelon",
+        "echelonPlaceHolderFilter": "Search by Echelon",
+        "diplome": "Diplome",
+        "tabPan": "Diplome",
+        "header": "Liste des diplomes",
+        "deleteDiplomeConfirmationMessage": "Are you sure you want to delete diplome",
+        "deleteDiplomesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "etatDemandeDocument":{
+        "code": "Code",
+        "libelle": "Libelle",
+        "etatDemandeDocument": "Etat demande document",
+        "tabPan": "Etat demande document",
+        "header": "Liste des etat demande documents",
+        "deleteEtatDemandeDocumentConfirmationMessage": "Are you sure you want to delete etat demande document",
+        "deleteEtatDemandeDocumentsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "templateDocument":{
+        "ref": "Ref",
+        "contenu": "Contenu",
+        "typeDocument": "Type document",
+        "typeDocumentPlaceHolder": "Select a Type document",
+        "typeDocumentPlaceHolderFilter": "Search by Type document",
+        "templateDocument": "Template document",
+        "tabPan": "Template document",
+        "header": "Liste des template documents",
+        "deleteTemplateDocumentConfirmationMessage": "Are you sure you want to delete template document",
+        "deleteTemplateDocumentsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "demandeDocument":{
+        "ref": "Ref",
+        "employe": "Employe",
+        "employePlaceHolder": "Select a Employe",
+        "employePlaceHolderFilter": "Search by Employe",
+        "typeDocument": "Type document",
+        "typeDocumentPlaceHolder": "Select a Type document",
+        "typeDocumentPlaceHolderFilter": "Search by Type document",
+        "demandeDocument": "Demande document",
+        "tabPan": "Demande document",
+        "header": "Liste des demande documents",
+        "deleteDemandeDocumentConfirmationMessage": "Are you sure you want to delete demande document",
+        "deleteDemandeDocumentsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "typeDocument":{
+        "code": "Code",
+        "libelle": "Libelle",
+        "typeDocument": "Type document",
+        "tabPan": "Type document",
+        "header": "Liste des type documents",
+        "deleteTypeDocumentConfirmationMessage": "Are you sure you want to delete type document",
+        "deleteTypeDocumentsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "responsabiliteDetail":{
+        "ref": "Ref",
+        "dateApplicationMin": "Date application min",
+        "dateApplicationMinMin": "Date application min Min",
+        "dateApplicationMinMax": "Date application min Max",
+        "dateApplicationMax": "Date application max",
+        "dateApplicationMaxMin": "Date application max Min",
+        "dateApplicationMaxMax": "Date application max Max",
+        "salaire": "Salaire",
+        "salaireMin": "Salaire Min",
+        "salaireMax": "Salaire Max",
+        "responsabilite": "Responsabilite",
+        "responsabilitePlaceHolder": "Select a Responsabilite",
+        "responsabilitePlaceHolderFilter": "Search by Responsabilite",
+        "responsabiliteDetail": "Responsabilite detail",
+        "tabPan": "Responsabilite detail",
+        "header": "Liste des responsabilite details",
+        "deleteResponsabiliteDetailConfirmationMessage": "Are you sure you want to delete responsabilite detail",
+        "deleteResponsabiliteDetailsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "responsabilite":{
+        "ref": "Ref",
+        "nom": "Nom",
+        "echelonMin": "Echelon min",
+        "echelonMinPlaceHolder": "Select a Echelon min",
+        "echelonMinPlaceHolderFilter": "Search by Echelon min",
+        "responsabilite": "Responsabilite",
+        "tabPan": "Responsabilite",
+        "header": "Liste des responsabilites",
+        "deleteResponsabiliteConfirmationMessage": "Are you sure you want to delete responsabilite",
+        "deleteResponsabilitesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "employe":{
+        "salaire": "Salaire",
+        "salaireMin": "Salaire Min",
+        "salaireMax": "Salaire Max",
+        "diplome": "Diplome",
+        "diplomePlaceHolder": "Select a Diplome",
+        "diplomePlaceHolderFilter": "Search by Diplome",
+        "entiteAdmin": "Entite admin",
+        "entiteAdminPlaceHolder": "Select a Entite admin",
+        "entiteAdminPlaceHolderFilter": "Search by Entite admin",
+        "credentialsNonExpired": "Credentials non expired",
+        "enabled": "Enabled",
+        "accountNonExpired": "Account non expired",
+        "accountNonLocked": "Account non locked",
+        "passwordChanged": "Password changed",
+        "username": "Username",
+        "password": "Password",
+        "employe": "Employe",
+        "tabPan": "Employe",
+        "header": "Liste des employes",
+        "deleteEmployeConfirmationMessage": "Are you sure you want to delete employe",
+        "deleteEmployesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "echelon":{
+        "ref": "Ref",
+        "libelle": "Libelle",
+        "salaire": "Salaire",
+        "salaireMin": "Salaire Min",
+        "salaireMax": "Salaire Max",
+        "echelle": "Echelle",
+        "echellePlaceHolder": "Select a Echelle",
+        "echellePlaceHolderFilter": "Search by Echelle",
+        "echelon": "Echelon",
+        "tabPan": "Echelon",
+        "header": "Liste des echelons",
+        "deleteEchelonConfirmationMessage": "Are you sure you want to delete echelon",
+        "deleteEchelonsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "avancement":{
+        "ref": "Ref",
+        "employe": "Employe",
+        "employePlaceHolder": "Select a Employe",
+        "employePlaceHolderFilter": "Search by Employe",
+        "echelleAncien": "Echelle ancien",
+        "echelleAncienPlaceHolder": "Select a Echelle ancien",
+        "echelleAncienPlaceHolderFilter": "Search by Echelle ancien",
+        "echelleNouveau": "Echelle nouveau",
+        "echelleNouveauPlaceHolder": "Select a Echelle nouveau",
+        "echelleNouveauPlaceHolderFilter": "Search by Echelle nouveau",
+        "salaireAjoute": "Salaire ajoute",
+        "salaireAjouteMin": "Salaire ajoute Min",
+        "salaireAjouteMax": "Salaire ajoute Max",
+        "avancement": "Avancement",
+        "tabPan": "Avancement",
+        "header": "Liste des avancements",
+        "deleteAvancementConfirmationMessage": "Are you sure you want to delete avancement",
+        "deleteAvancementsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "entiteAdmin":{
+        "ref": "Ref",
+        "departement": "Departement",
+        "chefDepart": "Chef depart",
+        "chefDepartPlaceHolder": "Select a Chef depart",
+        "chefDepartPlaceHolderFilter": "Search by Chef depart",
+        "employes": "Employes",
+        "entiteAdmin": "Entite admin",
+        "tabPan": "Entite admin",
+        "header": "Liste des entite admins",
+        "deleteEntiteAdminConfirmationMessage": "Are you sure you want to delete entite admin",
+        "deleteEntiteAdminsConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+
+    "echelle":{
+        "ref": "Ref",
+        "libelle": "Libelle",
+        "echelle": "Echelle",
+        "tabPan": "Echelle",
+        "header": "Liste des echelles",
+        "deleteEchelleConfirmationMessage": "Are you sure you want to delete echelle",
+        "deleteEchellesConfirmationMessage": "Are you sure you want to delete the selected elements"
+    },
+
+"appName": "GED"
+}
+
+

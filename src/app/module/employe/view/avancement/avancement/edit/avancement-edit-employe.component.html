@@ -1,0 +1,66 @@
+    <p-dialog [(visible)]="editDialog" [style]="{width: '70vw'}" header="{{'avancement.tabPan' | translate}}" [modal]="true" styleClass="p-fluid" [maximizable]="true" [draggable]="false" [resizable]="false">
+        <ng-template pTemplate="content" >
+                <p-tabView>
+                    <p-tabPanel header="{{'avancement.tabPan' | translate}}">
+                        <div class="grid">
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="1">{{'avancement.ref' | translate}}<span style="color: red;">*</span></label>
+                                            <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'avancement.ref' | translate}}" id="1" [(ngModel)]="item.ref"
+                                                   [ngClass]="{'ng-invalid ng-dirty' : !validAvancementRef}"  />
+                                            <small class='p-error' *ngIf='!validAvancementRef'>Ref est obligatoire.</small>
+                                        </div>
+
+
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="2">{{'avancement.employe' | translate}}<span style="color: red;">*</span></label>
+                                        <p-dropdown  appendTo="body"  [options]="employes" [(ngModel)]="item.employe" id="2" [filter]="true" filterMatchMode="contains"
+                                                     [showClear]="true" optionLabel="id" placeholder="{{'avancement.employe' | translate}}" [ngClass]="{'ng-invalid ng-dirty' : !validAvancementEmploye}"  >
+                                        </p-dropdown>
+                                        <small class='p-error' *ngIf='!validAvancementEmploye'>Employe est obligatoire.</small>
+                                    </div>
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="3">{{'avancement.echelleAncien' | translate}}</label>
+                                        <p-dropdown  appendTo="body"  [options]="echelleAnciens" [(ngModel)]="item.echelleAncien" id="3" [filter]="true" filterMatchMode="contains"
+                                                     [showClear]="true" optionLabel="libelle" placeholder="{{'avancement.echelleAncien' | translate}}"  >
+                                        </p-dropdown>
+                                        
+                                    </div>
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="4">{{'avancement.echelleNouveau' | translate}}</label>
+                                        <p-dropdown  appendTo="body"  [options]="echelleNouveaus" [(ngModel)]="item.echelleNouveau" id="4" [filter]="true" filterMatchMode="contains"
+                                                     [showClear]="true" optionLabel="libelle" placeholder="{{'avancement.echelleNouveau' | translate}}"  >
+                                        </p-dropdown>
+                                        
+                                    </div>
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="5">{{'avancement.salaireAjoute' | translate}}</label>
+                                            <p-inputNumber class="mb-2 mr-2" id="5" placeholder="{{'avancement.salaireAjoute' | translate}}" [(ngModel)]="item.salaireAjoute"  >
+                                            </p-inputNumber>
+                                            
+                                        </div>
+
+                        </div>
+                    </p-tabPanel>
+
+                </p-tabView>
+
+        </ng-template>
+
+        <ng-template pTemplate="footer" >
+            <div class="p-flexbox">
+
+                    <button pButton pRipple  label="{{'validate' | translate}}"  icon="pi pi-check"  (click)="edit()"></button>
+
+
+                        <button pButton pRipple  label="{{'cancel' | translate}}" icon="pi pi-times" class="p-button-outlined" (click)="hideEditDialog()"></button>
+
+
+            </div>
+        </ng-template>
+
+    </p-dialog>

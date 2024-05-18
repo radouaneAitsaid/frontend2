@@ -1,0 +1,36 @@
+
+<p-dialog [(visible)]="viewDialog" [style]="{width: '70vw'}" header="{{'responsabilite.tabPan' | translate}}" [modal]="true" styleClass="p-fluid">
+    <ng-template pTemplate="content">
+        <p-tabView>
+            <p-tabPanel header="{{'responsabilite.tabPan' | translate}}">
+                <div class="grid">
+                    <div class="field col-12 md:col-6">
+                        <label for="1">{{'responsabilite.ref' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'responsabilite.ref' | translate}}" autofocus  id="1" [ngModel]="item.ref">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="2">{{'responsabilite.nom' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'responsabilite.nom' | translate}}" autofocus  id="2" [ngModel]="item.nom">
+                    </div>
+                    <div class="field col-12 md:col-6">
+                        <label for="3">{{'responsabilite.echelonMin' | translate}}</label>
+                        <input class="mb-2 mr-2" type="text" pInputText [disabled]="true" placeholder="{{'responsabilite.echelonMin' | translate}}" autofocus  id="3" [ngModel]="item.echelonMin?.libelle">
+                    </div>
+                </div>
+            </p-tabPanel>
+
+        </p-tabView>
+
+    </ng-template>
+
+    <ng-template pTemplate="footer" >
+        <div class="p-flexbox">
+            <div>
+                <button pButton pRipple label="Annuler" icon="pi pi-times" class="p-button-outlined" (click)="hideViewDialog()"></button>
+            </div>
+        </div>
+    </ng-template>
+</p-dialog>
+
+
+

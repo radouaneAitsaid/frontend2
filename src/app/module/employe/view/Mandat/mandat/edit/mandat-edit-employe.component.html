@@ -1,0 +1,74 @@
+    <p-dialog [(visible)]="editDialog" [style]="{width: '70vw'}" header="{{'mandat.tabPan' | translate}}" [modal]="true" styleClass="p-fluid" [maximizable]="true" [draggable]="false" [resizable]="false">
+        <ng-template pTemplate="content" >
+                <p-tabView>
+                    <p-tabPanel header="{{'mandat.tabPan' | translate}}">
+                        <div class="grid">
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="1">{{'mandat.ref' | translate}}<span style="color: red;">*</span></label>
+                                            <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'mandat.ref' | translate}}" id="1" [(ngModel)]="item.ref"
+                                                   [ngClass]="{'ng-invalid ng-dirty' : !validMandatRef}"  />
+                                            <small class='p-error' *ngIf='!validMandatRef'>Ref est obligatoire.</small>
+                                        </div>
+
+
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="2">{{'mandat.dateDebut' | translate}}</label>
+                                            <p-calendar appendTo="body" id="2"  [showTime]="true" [showSeconds]="false" placeholder="{{'mandat.dateDebut' | translate}}"  [(ngModel)]="item.dateDebut"
+                                                        dateFormat="{{dateFormat}}"  >
+                                            </p-calendar>
+                                            
+                                        </div>
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="3">{{'mandat.dateFin' | translate}}</label>
+                                            <p-calendar appendTo="body" id="3"  [showTime]="true" [showSeconds]="false" placeholder="{{'mandat.dateFin' | translate}}"  [(ngModel)]="item.dateFin"
+                                                        dateFormat="{{dateFormat}}"  >
+                                            </p-calendar>
+                                            
+                                        </div>
+
+                                        <div class="field col-12 md:col-6">
+                                            <label for="4">{{'mandat.salaire' | translate}}</label>
+                                            <p-inputNumber class="mb-2 mr-2" id="4" placeholder="{{'mandat.salaire' | translate}}" [(ngModel)]="item.salaire"  >
+                                            </p-inputNumber>
+                                            
+                                        </div>
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="5">{{'mandat.employe' | translate}}<span style="color: red;">*</span></label>
+                                        <p-dropdown  appendTo="body"  [options]="employes" [(ngModel)]="item.employe" id="5" [filter]="true" filterMatchMode="contains"
+                                                     [showClear]="true" optionLabel="id" placeholder="{{'mandat.employe' | translate}}" [ngClass]="{'ng-invalid ng-dirty' : !validMandatEmploye}"  >
+                                        </p-dropdown>
+                                        <small class='p-error' *ngIf='!validMandatEmploye'>Employe est obligatoire.</small>
+                                    </div>
+
+                                    <div class="field col-11 md:col-6">
+                                        <label for="6">{{'mandat.responsabilite' | translate}}</label>
+                                        <p-dropdown  appendTo="body"  [options]="responsabilites" [(ngModel)]="item.responsabilite" id="6" [filter]="true" filterMatchMode="contains"
+                                                     [showClear]="true" optionLabel="nom" placeholder="{{'mandat.responsabilite' | translate}}"  >
+                                        </p-dropdown>
+                                        
+                                    </div>
+
+                        </div>
+                    </p-tabPanel>
+
+                </p-tabView>
+
+        </ng-template>
+
+        <ng-template pTemplate="footer" >
+            <div class="p-flexbox">
+
+                    <button pButton pRipple  label="{{'validate' | translate}}"  icon="pi pi-check"  (click)="edit()"></button>
+
+
+                        <button pButton pRipple  label="{{'cancel' | translate}}" icon="pi pi-times" class="p-button-outlined" (click)="hideEditDialog()"></button>
+
+
+            </div>
+        </ng-template>
+
+    </p-dialog>
