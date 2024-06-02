@@ -26,7 +26,7 @@
     "Mot de passe" : "Mot de passe",
     "prenom": "Prenom",
     "Changer": "Changer",
-	
+
 	"actionPermission": {
     "reference": "Référence",
     "libelle": "Libellé",
@@ -233,6 +233,8 @@
 
 
     "employe":{
+        "ref": "Reference",
+        "lastName": "Full Name",
         "salaire": "Salaire",
         "salaireMin": "Salaire Min",
         "salaireMax": "Salaire Max",

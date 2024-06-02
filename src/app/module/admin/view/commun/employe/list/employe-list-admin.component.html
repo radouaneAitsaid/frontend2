@@ -43,8 +43,8 @@
                             <input  class="w-full"  pInputText id="2" type="text"  [(ngModel)]="criteria.usernameLike">
                         </div>
                         <div class="lg:col-3 md:col-6 sm:col-12 mb-4">
-                            <label  class="font-bold block mb-2" for="3">{{'employe.nom' | translate}}</label>
-                            <input  class="w-full"  pInputText id="3" type="text"  [(ngModel)]="criteria.nomLike">
+                            <label  class="font-bold block mb-2" for="3">{{'employe.lastName' | translate}}</label>
+                            <input  class="w-full"  pInputText id="3" type="text"  [(ngModel)]="criteria.lastNameLike">
                         </div>
                         <div class="lg:col-3 md:col-6 sm:col-12 mb-4">
                             <label  class="font-bold block mb-2" for="4">{{'employe.password' | translate}}</label>
@@ -81,7 +81,7 @@
 
 
             <p-table #dt [value]="items" [columns]="cols" [rows]="8" [paginator]="false"
-                     [globalFilterFields]="['ref', 'username', 'nom', 'password', 'salaire', 'diplomelibelle', 'entiteAdmindepartement']" [(selection)]="selections"
+                     [globalFilterFields]="['ref', 'username', 'lastName', 'password', 'salaire', 'diplomelibelle', 'entiteAdmindepartement']" [(selection)]="selections"
                      [rowHover]="true" dataKey="id" styleClass="p-datatable-customers"
                      currentPageReportTemplate="{{'les éléments de {first} à {last} sur {totalRecords} ' | translate}}"
                      [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" selectionMode="multiple">
@@ -109,6 +109,15 @@
                         </th>
 
 
+                        <th pSortableColumn="lastName">
+                            <div class="p-d-flex p-jc-between p-ai-center">
+                                <span>{{'employe.lastName' | translate}}</span>
+                                <p-sortIcon field="lastName"></p-sortIcon>
+                                <p-columnFilter type="text" field="element.lastName" display="menu" class="ml-auto"></p-columnFilter>
+                            </div>
+                        </th>
+
+
                         <th pSortableColumn="username">
                             <div class="p-d-flex p-jc-between p-ai-center">
                                 <span>{{'employe.username' | translate}}</span>
@@ -118,13 +127,7 @@
                         </th>
 
 
-                        <th pSortableColumn="nom">
-                            <div class="p-d-flex p-jc-between p-ai-center">
-                                <span>{{'employe.nom' | translate}}</span>
-                                <p-sortIcon field="nom"></p-sortIcon>
-                                <p-columnFilter type="text" field="element.nom" display="menu" class="ml-auto"></p-columnFilter>
-                            </div>
-                        </th>
+
 
 
                         <th pSortableColumn="password">
@@ -170,11 +173,11 @@
 
                         <td>{{element.ref}}</td>
 
+                        <td>{{element.lastName}}</td>
+
+
 
                         <td>{{element.username}}</td>
-
-
-                        <td>{{element.nom}}</td>
 
 
                         <td>{{element.password}}</td>

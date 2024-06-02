@@ -9,7 +9,7 @@ export class EmployeDto extends BaseDto{
 
     public username: string;
 
-    public nom: string;
+    public lastName: string;
 
     public password: string;
 
@@ -24,7 +24,7 @@ export class EmployeDto extends BaseDto{
 
         this.ref = '';
         this.username = '';
-        this.nom = '';
+        this.lastName = '';
         this.password = '';
         this.salaire = null;
 

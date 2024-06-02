@@ -11,6 +11,12 @@
                         <small class='p-error' *ngIf='!validEmployeRef'>Ref est obligatoire.</small>
                     </div>
 
+                    <div class="field col-12 md:col-6">
+                        <label for="3">{{'employe.lastName' | translate}}<span style="color: red;">*</span></label>
+                        <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'employe.lastName' | translate}}" id="3" [(ngModel)]="item.lastName"
+                               [ngClass]="{'ng-invalid ng-dirty' : !validEmployeLastName}"  />
+                        <small class='p-error' *ngIf='!validEmployeLastName'>lastName est obligatoire.</small>
+                    </div>
 
 
                     <div class="field col-12 md:col-6">
@@ -22,12 +28,7 @@
 
 
 
-                    <div class="field col-12 md:col-6">
-                        <label for="3">{{'employe.nom' | translate}}<span style="color: red;">*</span></label>
-                        <input class="mb-2 mr-2" type="text" pInputText  placeholder="{{'employe.nom' | translate}}" id="3" [(ngModel)]="item.nom"
-                               [ngClass]="{'ng-invalid ng-dirty' : !validEmployeNom}"  />
-                        <small class='p-error' *ngIf='!validEmployeNom'>Nom est obligatoire.</small>
-                    </div>
+
 
 
 

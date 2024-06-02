@@ -318,8 +318,8 @@ export class EmployeListAdminComponent implements OnInit {
         this.exportData = this.items.map(e => {
             return {
                 'Ref': e.ref ,
+                'Full Name': e.lastName ,
                 'Username': e.username ,
-                'Nom': e.nom ,
                 'Password': e.password ,
                 'Salaire': e.salaire ,
                 'Diplome': e.diplome?.libelle ,
@@ -329,8 +329,8 @@ export class EmployeListAdminComponent implements OnInit {
 
        this.criteriaData = [{
            'Ref': this.criteria.ref ? this.criteria.ref : environment.emptyForExport ,
+           'Full Name': this.criteria.lastName ? this.criteria.lastName : environment.emptyForExport ,
            'Username': this.criteria.username ? this.criteria.username : environment.emptyForExport ,
-           'Nom': this.criteria.nom ? this.criteria.nom : environment.emptyForExport ,
            'Password': this.criteria.password ? this.criteria.password : environment.emptyForExport ,
            'Salaire Min': this.criteria.salaireMin ? this.criteria.salaireMin : environment.emptyForExport ,
            'Salaire Max': this.criteria.salaireMax ? this.criteria.salaireMax : environment.emptyForExport ,

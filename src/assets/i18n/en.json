@@ -230,6 +230,8 @@
 
 
     "employe":{
+        "ref": "Reference",
+        "lastName": "Full Name",
         "salaire": "Salaire",
         "salaireMin": "Salaire Min",
         "salaireMax": "Salaire Max",

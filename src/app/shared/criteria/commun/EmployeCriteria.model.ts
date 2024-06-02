@@ -9,8 +9,8 @@ export class EmployeCriteria  extends BaseCriteria  {
     public refLike: string;
     public username: string;
     public usernameLike: string;
-    public nom: string;
-    public nomLike: string;
+    public lastName: string;
+    public lastNameLike: string;
     public password: string;
     public passwordLike: string;
     public salaire: number;

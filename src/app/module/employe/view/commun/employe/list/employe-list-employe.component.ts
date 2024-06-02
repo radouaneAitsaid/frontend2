@@ -287,6 +287,8 @@ export class EmployeListEmployeComponent implements OnInit {
 
     public initCol() {
         this.cols = [
+            {field: 'ref', header: 'Reference'},
+            {field: 'lastName', header: 'Full Name'},
             {field: 'salaire', header: 'Salaire'},
             {field: 'diplome?.libelle', header: 'Diplome'},
             {field: 'entiteAdmin?.departement', header: 'Entite admin'},
@@ -319,7 +321,7 @@ export class EmployeListEmployeComponent implements OnInit {
             return {
                 'Ref': e.ref ,
                 'Username': e.username ,
-                'Nom': e.nom ,
+                'Nom': e.lastName ,
                 'Password': e.password ,
                 'Salaire': e.salaire ,
                 'Diplome': e.diplome?.libelle ,
@@ -330,7 +332,7 @@ export class EmployeListEmployeComponent implements OnInit {
        this.criteriaData = [{
            'Ref': this.criteria.ref ? this.criteria.ref : environment.emptyForExport ,
            'Username': this.criteria.username ? this.criteria.username : environment.emptyForExport ,
-           'Nom': this.criteria.nom ? this.criteria.nom : environment.emptyForExport ,
+           'Full Name': this.criteria.lastName ? this.criteria.lastName : environment.emptyForExport ,
            'Password': this.criteria.password ? this.criteria.password : environment.emptyForExport ,
            'Salaire Min': this.criteria.salaireMin ? this.criteria.salaireMin : environment.emptyForExport ,
            'Salaire Max': this.criteria.salaireMax ? this.criteria.salaireMax : environment.emptyForExport ,

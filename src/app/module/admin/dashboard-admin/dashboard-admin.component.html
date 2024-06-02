@@ -1,14 +1,74 @@
-<div class="row">
-    <div class="col-lg-6 col-md-12 col-6 mb-4">
+<div class="grid" style="display: flex; flex-wrap: wrap; gap: 1rem;">
+    <div class="col-12 lg:col-6 xl:col-3 card-container" style="flex: 1 1 23%; display: flex;">
+        <div class="card mb-0" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="flex justify-content-between mb-3">
+                <div>
+                    <span class="block text-500 font-medium mb-3">Employés</span>
+                    <div class="text-900 font-medium text-xl">200</div>
+                </div>
+                <div class="flex align-items-center justify-content-center bg-blue-100 border-round" style="width: 2.5rem; height: 2.5rem;">
+                    <i class="pi pi-users text-blue-500 text-xl"></i>
+                </div>
+            </div>
+            <span class="text-green-500 font-medium">en total.</span>
+        </div>
+    </div>
+
+    <div class="col-12 lg:col-6 xl:col-3 card-container" style="flex: 1 1 23%; display: flex;">
+        <div class="card mb-0" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="flex justify-content-between mb-3">
+                <div>
+                    <span class="block text-500 font-medium mb-3">Entité Administrative</span>
+                    <div class="text-900 font-medium text-xl">17</div>
+                </div>
+                <div class="flex align-items-center justify-content-center bg-orange-100 border-round" style="width: 2.5rem; height: 2.5rem;">
+                    <i class="pi pi-sitemap text-orange-500 text-xl"></i>
+                </div>
+            </div>
+            <span class="text-green-500 font-medium">en total.</span>
+        </div>
+    </div>
+
+    <div class="col-12 lg:col-6 xl:col-3 card-container" style="flex: 1 1 23%; display: flex;">
+        <div class="card mb-0" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="flex justify-content-between mb-3">
+                <div>
+                    <span class="block text-500 font-medium mb-3">Demandes documents</span>
+                    <div class="text-900 font-medium text-xl">56</div>
+                </div>
+                <div class="flex align-items-center justify-content-center bg-cyan-100 border-round" style="width: 2.5rem; height: 2.5rem;">
+                    <i class="pi pi-calendar-minus text-cyan-500 text-xl"></i>
+                </div>
+            </div>
+            <span class="text-green-500 font-medium">Demandes.</span>
+        </div>
+    </div>
+
+    <div class="col-12 lg:col-6 xl:col-3 card-container" style="flex: 1 1 23%; display: flex;">
+        <div class="card mb-0" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="flex justify-content-between mb-3">
+                <div>
+                    <span class="block text-500 font-medium mb-3">Responsabilité</span>
+                    <div class="text-900 font-medium text-xl">60</div>
+                </div>
+                <div class="flex align-items-center justify-content-center bg-purple-100 border-round" style="width: 2.5rem; height: 2.5rem;">
+                    <i class="pi pi-briefcase text-purple-500 text-xl"></i>
+                </div>
+            </div>
+            <span class="text-green-500 font-medium">en total.</span>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="display: flex; flex-wrap: wrap; gap: 1rem;">
+    <div class="col-lg-6 col-md-12 col-12 mb-4">
         <div class="card flex justify-content-center">
             <p-chart type="pie" [data]="productStockData" [options]="productStockOptions"></p-chart>
         </div>
-
     </div>
-    <div class="col-lg-6 col-md-12 col-6 mb-4">
-    <div class="card">
-        <p-chart type="bar" [data]="barChartData" [options]="barChartOptions" />
+    <div class="col-lg-6 col-md-12 col-12 mb-4">
+        <div class="card">
+            <p-chart type="bar" [data]="barChartData" [options]="barChartOptions"></p-chart>
+        </div>
     </div>
-    </div>
-
 </div>

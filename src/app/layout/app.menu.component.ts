@@ -26,16 +26,25 @@ export class AppMenuComponent implements OnInit {
                     icon: 'pi pi-fw pi-briefcase',
                     items: [
                         {
-                            label: 'Dashboard',
+                            label: 'dashboard',
                             icon: 'pi pi-home',
-
+                            routerLink: ['/app/admin/dashboard']
+                        },
+                        {
+                            label: 'Ressources humaines',
+                            icon: 'pi pi-users',
                             items: [
                                 {
-                                    label: 'ressources humains',
+                                    label: 'Liste employe',
                                     icon: 'pi pi-fw pi-plus-circle',
-                                    routerLink: ['/app/admin/dashboard']
+                                    routerLink: ['/app/admin/commun/employe/list']
                                 },
-                                ]
+                                {
+                                    label: 'Liste entite admin',
+                                    icon: 'pi pi-fw pi-plus-circle',
+                                    routerLink: ['/app/admin/commun/entite-admin/list']
+                                },
+                            ]
                         },
                         {
                             label: 'Gestion Responsibilite',
@@ -58,22 +67,7 @@ export class AppMenuComponent implements OnInit {
                                 },
                             ]
                         },
-                        {
-                            label: 'Ressources humaines',
-                            icon: 'pi pi-users',
-                            items: [
-                                {
-                                    label: 'Liste employe',
-                                    icon: 'pi pi-fw pi-plus-circle',
-                                    routerLink: ['/app/admin/commun/employe/list']
-                                },
-                                {
-                                    label: 'Liste entite admin',
-                                    icon: 'pi pi-fw pi-plus-circle',
-                                    routerLink: ['/app/admin/commun/entite-admin/list']
-                                },
-                            ]
-                        },
+
                         {
                             label: 'Gestion Echelle',
                             icon: 'pi pi-chart-line',
